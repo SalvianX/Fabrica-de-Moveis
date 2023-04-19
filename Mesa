@@ -1,0 +1,17 @@
+package fabrica;
+
+public class Mesa extends Movel {
+	private int tamanho;
+	public Mesa(String nome, int tamanho) {
+		super(nome);
+		this.tamanho = tamanho;
+	}
+	@Override
+	public String toString() {
+		return "Mesa [tamanho=" + tamanho + "]";
+	}
+	public int getTamanho() {
+		return tamanho;
+	}
+
+}
