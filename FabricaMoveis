@@ -1,0 +1,53 @@
+package fabrica;
+
+public  class FabricaMoveis {
+	static  int numCadeiras;
+    static  int numMesas;
+	static int numEstantes;
+	static int numSofas;
+	
+	 private FabricaMoveis(){
+		 numCadeiras = 0;
+		 numMesas = 0;
+		 numEstantes = 0;
+		 numSofas = 0;	 
+	 }
+
+	public static Cadeira fazerCadeira(String nome, boolean temBraco) {
+		numCadeiras++;
+		return new Cadeira(nome, temBraco);
+	}
+
+	public static Mesa fazerMesa(int numCadeiras) {
+		FabricaMoveis.numCadeiras = numCadeiras;
+	}
+
+	public static int getNumMesas() {
+		return numMesas;
+	}
+
+	public static void setNumMesas(int numMesas) {
+		FabricaMoveis.numMesas = numMesas;
+	}
+
+	public static int getNumEstantes() {
+		return numEstantes;
+	}
+
+	public static void setNumEstantes(int numEstantes) {
+		FabricaMoveis.numEstantes = numEstantes;
+	}
+
+	public static int getNumSofas() {
+		return numSofas;
+	}
+
+	public static void setNumSofas(int numSofas) {
+		FabricaMoveis.numSofas = numSofas;
+	}
+	 
+
+	
+}
+
+
