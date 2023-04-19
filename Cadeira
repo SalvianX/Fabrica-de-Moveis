@@ -1,0 +1,26 @@
+package fabrica;
+
+public class Cadeira extends Movel {
+	private  boolean comBraco;
+	public Cadeira(String nome, boolean temBraco) {
+		super(nome);
+		this.comBraco = temBraco;
+	}
+
+	
+	public String toString() {
+		return "Cadeira [comBraco=" + comBraco + "]";
+	}
+	public boolean isComBraco() {
+		return comBraco;
+	}
+
+	
+	
+
+	
+
+	
+	
+
+}
